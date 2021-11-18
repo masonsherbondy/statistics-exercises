@@ -371,3 +371,18 @@ def get_db_url(db_name):
     from env import host, user, password
     return f'mysql+pymysql://{user}:{password}@{host}/{db_name}'
 
+
+# In[ ]:
+
+
+#is it 3?
+def is_three(x):
+    if x == 3 or x == '3' or x.lower() == 'three':
+        return True
+    else:
+        return False
+if __name__ == '__main__':        
+    print(is_three('ThREe'))
+    print(is_three('3'))
+    print(is_three(3))
+
